@@ -1,0 +1,15 @@
+.box {
+    height: 100%;
+}
+
+.listitem {
+    padding-left: 36px !important;
+}
+
+.filterlist {
+    list-style: none;
+}
+
+.chip {
+    margin: 0.25em;
+}

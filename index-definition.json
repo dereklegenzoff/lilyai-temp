@@ -1,0 +1,1165 @@
+{
+    "name": "lily-ai-v3",
+    "defaultScoringProfile": null,
+    "fields": [
+        {
+            "name": "sku_id",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": true,
+            "facetable": false,
+            "key": true,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "standard.lucene",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "parent_id",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": false,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "standard.lucene",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "title",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": true,
+            "facetable": false,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": [
+                "lily-synonyms"
+            ]
+        },
+        {
+            "name": "description",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": false,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": false,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": [
+                "lily-synonyms"
+            ]
+        },
+        {
+            "name": "bullet_text",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": false,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": false,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "product_care",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "gender",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "age_group",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "brand",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "product_type",
+            "type": "Edm.String",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "image_urls",
+            "type": "Collection(Edm.String)",
+            "searchable": false,
+            "filterable": false,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": false,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": null,
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "pattern",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "occasion",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "dressing_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "color_family",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "material",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "neck_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "embellishment",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "length",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "metal_color",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "sleeve_length",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "closure",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "jacket_fit",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "strap_detail",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "bottom_fit",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "lens_color",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "fit",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "size",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "sleeve_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "toe_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "functionality",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "denim_wash",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "jacket_length",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "fabric_quality",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "waist_detail",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "strap_height",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "band_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "heel_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "pocket_detail",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "band_size",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "hem_detail",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "heel_height",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "chain_type",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "material_quality",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "back_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "fabric_content",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "collar_detail",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "waist_rise",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "shape",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "movement",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "frame_color",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "shoulder_cut",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "complications",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "lens_style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "finish",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "style",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "dress_length",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "shaft_height",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "cuff_detail",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "color",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "sheerness",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "sock_type",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        },
+        {
+            "name": "top_fit",
+            "type": "Collection(Edm.String)",
+            "searchable": true,
+            "filterable": true,
+            "retrievable": true,
+            "sortable": false,
+            "facetable": true,
+            "key": false,
+            "indexAnalyzer": null,
+            "searchAnalyzer": null,
+            "analyzer": "en.microsoft",
+            "normalizer": null,
+            "synonymMaps": []
+        }
+    ],
+    "scoringProfiles": [],
+    "corsOptions": null,
+    "suggesters": [
+        {
+            "name": "sg",
+            "searchMode": "analyzingInfixMatching",
+            "sourceFields": [
+                "title",
+                "product_type"
+            ]
+        }
+    ],
+    "analyzers": [],
+    "normalizers": [],
+    "tokenizers": [],
+    "tokenFilters": [],
+    "charFilters": [],
+    "encryptionKey": null,
+    "similarity": {
+        "@odata.type": "#Microsoft.Azure.Search.BM25Similarity",
+        "k1": null,
+        "b": null
+    },
+    "semantic": {
+        "configurations": [
+            {
+                "name": "lily-config",
+                "prioritizedFields": {
+                    "titleField": {
+                        "fieldName": "title"
+                    },
+                    "prioritizedContentFields": [
+                        {
+                            "fieldName": "description"
+                        },
+                        {
+                            "fieldName": "bullet_text"
+                        }
+                    ],
+                    "prioritizedKeywordsFields": [
+                        {
+                            "fieldName": "gender"
+                        },
+                        {
+                            "fieldName": "age_group"
+                        },
+                        {
+                            "fieldName": "brand"
+                        },
+                        {
+                            "fieldName": "pattern"
+                        },
+                        {
+                            "fieldName": "occasion"
+                        },
+                        {
+                            "fieldName": "dressing_style"
+                        },
+                        {
+                            "fieldName": "color_family"
+                        },
+                        {
+                            "fieldName": "material"
+                        },
+                        {
+                            "fieldName": "neck_style"
+                        },
+                        {
+                            "fieldName": "embellishment"
+                        },
+                        {
+                            "fieldName": "length"
+                        },
+                        {
+                            "fieldName": "metal_color"
+                        },
+                        {
+                            "fieldName": "sleeve_length"
+                        },
+                        {
+                            "fieldName": "closure"
+                        },
+                        {
+                            "fieldName": "jacket_fit"
+                        },
+                        {
+                            "fieldName": "strap_detail"
+                        },
+                        {
+                            "fieldName": "bottom_fit"
+                        },
+                        {
+                            "fieldName": "lens_color"
+                        },
+                        {
+                            "fieldName": "fit"
+                        },
+                        {
+                            "fieldName": "size"
+                        },
+                        {
+                            "fieldName": "sleeve_style"
+                        },
+                        {
+                            "fieldName": "toe_style"
+                        },
+                        {
+                            "fieldName": "functionality"
+                        },
+                        {
+                            "fieldName": "denim_wash"
+                        },
+                        {
+                            "fieldName": "top_fit"
+                        },
+                        {
+                            "fieldName": "sock_type"
+                        },
+                        {
+                            "fieldName": "sheerness"
+                        },
+                        {
+                            "fieldName": "color"
+                        },
+                        {
+                            "fieldName": "cuff_detail"
+                        },
+                        {
+                            "fieldName": "shaft_height"
+                        },
+                        {
+                            "fieldName": "dress_length"
+                        },
+                        {
+                            "fieldName": "style"
+                        },
+                        {
+                            "fieldName": "finish"
+                        },
+                        {
+                            "fieldName": "lens_style"
+                        },
+                        {
+                            "fieldName": "complications"
+                        },
+                        {
+                            "fieldName": "shoulder_cut"
+                        },
+                        {
+                            "fieldName": "frame_color"
+                        },
+                        {
+                            "fieldName": "movement"
+                        },
+                        {
+                            "fieldName": "shape"
+                        },
+                        {
+                            "fieldName": "waist_rise"
+                        },
+                        {
+                            "fieldName": "collar_detail"
+                        },
+                        {
+                            "fieldName": "fabric_content"
+                        },
+                        {
+                            "fieldName": "back_style"
+                        },
+                        {
+                            "fieldName": "material_quality"
+                        },
+                        {
+                            "fieldName": "chain_type"
+                        },
+                        {
+                            "fieldName": "heel_height"
+                        },
+                        {
+                            "fieldName": "hem_detail"
+                        },
+                        {
+                            "fieldName": "band_size"
+                        },
+                        {
+                            "fieldName": "pocket_detail"
+                        },
+                        {
+                            "fieldName": "heel_style"
+                        },
+                        {
+                            "fieldName": "band_style"
+                        },
+                        {
+                            "fieldName": "strap_height"
+                        },
+                        {
+                            "fieldName": "waist_detail"
+                        },
+                        {
+                            "fieldName": "fabric_quality"
+                        },
+                        {
+                            "fieldName": "jacket_length"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+.suggestion-item:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+    cursor: pointer;
+}
+
+.suggestion-item {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #333333;
+}

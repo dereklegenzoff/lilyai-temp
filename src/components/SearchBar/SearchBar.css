@@ -1,0 +1,94 @@
+.suggestions {
+    position: relative;
+    display: inline-block;
+    width: inherit;
+    z-index: 99;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.input-group {
+    flex-wrap: nowrap;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+.terra-form {
+    border: 3px solid #d7d7d7;
+    border-radius: 7px;
+    height: 57px;
+}
+
+.terra-button {
+    background: #333333;
+    border: 4px solid #333333;
+    border-radius: 7px;
+    width: 136px;
+    height: 57px;
+
+    color: white;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.terra-button:hover {
+    color: #303030;
+}
+
+.terra-label {
+    width: 166px;
+    height: 47px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.searchbox {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    background: #333333;
+}
+
+.button {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #303030;
+    border-radius: 7px;
+    width: 136px;
+    height: 57px;
+}
